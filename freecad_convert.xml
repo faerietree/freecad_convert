@@ -7,22 +7,22 @@
 	</description>
 
 	<homepage>http://github.com/faerietree/freecad_convert</homepage>
-    -->
-	
+	-->
+
 	<!-- tags: -->
 	<category type=''>conversion</category>
 	<category type=''>file</category>
 	<category type=''>format</category>
-    <category type=''>freecad</category>
+	<category type=''>freecad</category>
 	<category type=''>python</category>
-    <category type=''>script</category>
+	<category type=''>script</category>
 	<category type=''>type</category>
 	<!-- If type is not given, then it is assumed being one of the main application category specification:
-	      https://specifications.freedesktop.org/menu-spec/latest/apa.html
-    -->
-    <category>Science</category>
-    <category>Development</category>
-    <category>Utility</category>
+		  https://specifications.freedesktop.org/menu-spec/latest/apa.html
+	-->
+	<category>Science</category>
+	<category>Development</category>
+	<category>Utility</category>
 
 	<!-- Feed that contains more implementations of this feed's interface:
 	e.g. arch='*-src' means that there is no point fetching this feed unless you are looking for source code
@@ -30,15 +30,15 @@
 	-->
 
 	<!-- implementations in this feed are for the stated interface:
-	     a feed might point to an optional extra feed, e.g. a development feed for a local version using 0install add-feed
+		 a feed might point to an optional extra feed, e.g. a development feed for a local version using 0install add-feed
 	<feed-for interface='~/freecad_convert/'/>
-    -->
+	-->
 
 	<!--
-	     Note: The main attribute here is to support 0launch < 0.53.
+		 Note: The main attribute here is to support 0launch < 0.53.
 Newer versions will use the <command>.
-    -->
-    <group version='0.1' main="freecad_convert.py" doc-dir="doc" license="CC-BY-SA">
+	-->
+	<group version='0.1' main="freecad_convert.py" doc-dir="doc" license="CC-BY-SA">
 		<!-- for this group common dependencies: -->
 		<requires interface="http://raw.githubusercontent.com/faerietree/FreeCAD/FreeCAD.xml">
 			<!--
