@@ -52,8 +52,7 @@ Newer versions will use the <command>.
 		</requires>
 
 		<implementation id="." version="0.1-pre">
-			<manifest-digest sha256=""/>
-			<manifest-digest sha256new=""/>
+			<manifest-digest sha256="" sha256new="" />
 
 			<!-- executed by 0launch by default -->
 			<command name='run' path='freecad_convert.py'>
