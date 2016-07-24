@@ -55,7 +55,7 @@ import Mesh
 #import Blender                 #<-- kept as a reminder for how well those two open source gems interact
 
 
-#The original author wrote this little script. Amazingly he figured out the syntax by first recording some macros in FreeCAD.
+# The original author wrote this script. The syntax was figured out by recording and evaluating some macros in FreeCAD. Thanks open source movement.
 
 
 in_fn, out_fn = sys.argv[1], sys.argv[2]  #<-- repaired, out of bounds
