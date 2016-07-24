@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='resources/catalog.xsl'?>
+<c:catalog xmlns="http://zero-install.sourceforge.net/2004/injector/interface" xmlns:c="http://0install.de/schema/injector/catalog"><interface uri="http://raw.githubusercontent.com/faerietree/freecad_convert/master/public/freecad_convert.xml"><name>freecad convert</name><summary>A python script using FreeCAD to convert from one file type to another.</summary><homepage>http://github.com/faerietree/freecad_convert</homepage><category type="">conversion</category><category type="">file</category><category type="">format</category><category type="">freecad</category><category type="">python</category><category type="">script</category><category type="">type</category><category>Science</category><category>Development</category><category>Utility</category></interface></c:catalog>
+<!-- Base64 Signature
+iQEcBAABAgAGBQJXlKJOAAoJEH19V19w0XMlzwMH/RJr9bO96iyBxLrUxrl45Pq9wH8L1B12u4UD
+T/aliGxSKJnMlJlMPL5T8W7+DVrSuxEYYY6SZJBqVrbnuthBN4elT6aZJ8rNBBFhSP+/h+/z3DW7
+aGyvpJba5fuH6BzvoYMm+wZjRfzFevO2km0DPBBxwgHAvrpxhhuqQg/mmpEH+eNI3Xt25nJeWGk7
+vNWj5lwNVXh7xJ6+L6PzOtVfS20fAcgNaVXar/qOQREZM+gPSNvVC/VfWFmk/M6CY1xgo5aKWxSQ
+biDjl1maU5yTW/5JJgnnMENjpbRNn/A9UFVT1QpjT1r5VaqfiRa2lrfeKtTIeUt9fhRRYspI0/Sw
+tBs=
+
+-->
