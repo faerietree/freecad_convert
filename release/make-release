@@ -1,0 +1,17 @@
+#!/bin/sh
+
+if [ -z $PROJECT ]; then
+	PROJECT="freecad_convert"
+fi
+if [ -z $FEED ]; then
+	FEED="local.xml"
+fi
+if [ -z $PUBLIC_SCM_REPOSITORY ]; then
+	PUBLIC_SCM_REPOSITORY="origin"
+fi
+
+cd `dirname "$0"`
+exec 0launch http://0install.net/2007/interfaces/0release.xml \
+ --release "$HOME"/"$PROJECT"/"$FEED" \
+ --public-scm-repository="$PUBLIC_SCM_REPOSITORY" \
+ "$@"
