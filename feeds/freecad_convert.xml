@@ -7,7 +7,6 @@
 	-->
 
   <homepage>http://github.com/faerietree/freecad_convert</homepage>
-
 <!-- tags: -->
   <category type="">conversion</category>
   <category type="">file</category>
@@ -20,8 +19,7 @@
 	-->
   <category>Science</category>
   <category>Development</category>
-  <category>Utility</category>
-<!-- Note: The main attribute here is to support 0launch < 0.53.
+  <category>Utility</category><!-- Note: The main attribute here is to support 0launch < 0.53.
 Newer versions will use the <command>.
 	-->
   <group doc-dir="doc" license="CC-BY-SA" main="freecad_convert.py" version="0.1"><!-- for this group common dependencies: -->
@@ -33,17 +31,38 @@ Newer versions will use the <command>.
       <version not-before="3"/>
     </requires>
 
-    <implementation id="sha1new=116b678f6f86520922d9747625a8070c74b68ab7" released="2016-07-24" version="0.1">
-      <manifest-digest sha256="" sha256new="M2VYPHIH7NF5TL7TCFOHTLIDTGVXAFNNCBLFXS5AL7MSCW72E7NQ"/>
-<!-- executed by 0launch by default -->
+    <implementation id="sha1new=116b678f6f86520922d9747625a8070c74b68ab7" released="2016-07-24" stability="stable" version="0.1">
+      <manifest-digest sha256="" sha256new="M2VYPHIH7NF5TL7TCFOHTLIDTGVXAFNNCBLFXS5AL7MSCW72E7NQ"/><!-- executed by 0launch by default -->
       <command name="run" path="freecad_convert.py">
         <runner interface="http://repo.roscidus.com/python/python">
           <version not-before="3"/>
         </runner>
         <arg>$INPUT_FILE</arg>
         <arg>${OUTPUT_FILE}</arg>
+      </command><!-- executed by 0test by default -->
+      <command name="test" path="freecad_convert.py">
+        <runner interface="http://repo.roscidus.com/python/python">
+          <version not-before="3"/>
+        </runner>
+        <arg>test.stp</arg>
+        <arg>test.stl</arg>
+        <arg>--debug</arg>
+        <arg>--test</arg><!-- give each PATH directory as separate argument: -->
+        <for-each item-from="PATH" separator=":">
+          <arg>${item}</arg>
+        </for-each>
+      </command><!-- executed by 0compile by default -->
+      <command name="compile" path="freecad_convert.py">
+        <runner interface="http://repo.roscidus.com/python/python">
+          <version not-before="3"/>
+        </runner>
       </command>
-<!-- executed by 0test by default -->
+      <archive extract="freecad-convert-0.1" href="freecad-convert-0.1.tar.bz2" size="3735"/>
+
+
+    </implementation>
+
+    <group>
       <command name="test" path="freecad_convert.py">
         <runner interface="http://repo.roscidus.com/python/python">
           <version not-before="3"/>
@@ -56,19 +75,29 @@ Newer versions will use the <command>.
           <arg>${item}</arg>
         </for-each>
       </command>
-<!-- executed by 0compile by default -->
       <command name="compile" path="freecad_convert.py">
         <runner interface="http://repo.roscidus.com/python/python">
           <version not-before="3"/>
         </runner>
       </command>
-      <archive extract="freecad-convert-0.1" href="freecad-convert-0.1.tar.bz2" size="3735"/>
+      <command name="run" path="freecad_convert.py">
+        <runner interface="http://repo.roscidus.com/python/python">
+          <version not-before="3"/>
+        </runner>
+        <arg>$INPUT_FILE</arg>
+        <arg>${OUTPUT_FILE}</arg>
+      </command>
+      <implementation id="sha1new=271c1536664b1ef55a90adf3e500cff7d4e97d06" released="2016-07-24" version="0.2">
+        <manifest-digest sha256="" sha256new="AYO675KIGQQHI2FW3N7NGFK3JKKXW62D5RH2TVI62VZW3YO4D2NA"/>
+<!-- executed by 0launch by default -->
+<!-- executed by 0test by default -->
+<!-- executed by 0compile by default -->
+        <archive extract="freecad-convert-0.2" href="freecad-convert-0.2.tar.bz2" size="16763"/>
 
 
-    </implementation>
-
-  </group>
-<!--<needs-terminal/>-->
+      </implementation>
+    </group>
+  </group><!--<needs-terminal/>-->
 
 
 </interface>
