@@ -1,4 +1,5 @@
 <?xml version="1.0" ?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
 <interface xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
 	<name>freecad convert</name>
 	<summary>A python script using FreeCAD to convert from one file type to another.</summary>
@@ -11,13 +12,13 @@
 
 
 	<!-- tags: -->
-	<category type=''>conversion</category>
-	<category type=''>file</category>
-	<category type=''>format</category>
-	<category type=''>freecad</category>
-	<category type=''>python</category>
-	<category type=''>script</category>
-	<category type=''>type</category>
+	<category type="">conversion</category>
+	<category type="">file</category>
+	<category type="">format</category>
+	<category type="">freecad</category>
+	<category type="">python</category>
+	<category type="">script</category>
+	<category type="">type</category>
 	<!-- If type is not given, then it is assumed being one of the main application category specification:
 		  https://specifications.freedesktop.org/menu-spec/latest/apa.html
 	-->
@@ -34,12 +35,12 @@
 	 a feed might point to an optional extra feed, e.g. a development feed for a local version using 0install add-feed
 	<feed-for interface='~/freecad_convert/'/>
 	-->
-	<feed-for interface='http://raw.githubusercontent.com/faerietree/freecad_convert/master/public/freecad_convert.xml'/>
+	<feed-for interface="http://raw.githubusercontent.com/faerietree/freecad_convert/master/public/freecad_convert.xml"/>
 
 	<!-- Note: The main attribute here is to support 0launch < 0.53.
 Newer versions will use the <command>.
 	-->
-	<group version='0.1' main="freecad_convert.py" doc-dir="doc" license="CC-BY-SA">
+	<group doc-dir="doc" license="CC-BY-SA" main="freecad_convert.py" version="0.1">
 		<!-- for this group common dependencies: -->
 		<requires interface="http://raw.githubusercontent.com/faerietree/FreeCAD/public/FreeCAD.xml">
 			<!--
@@ -48,25 +49,25 @@ Newer versions will use the <command>.
 			-->
 		</requires>
 		<requires interface="http://repo.roscidus.com/python/python">
-			<version not-before='3'/>
+			<version not-before="3"/>
 		</requires>
 
-		<implementation id="." version="0.1-pre">
-			<manifest-digest sha256="" sha256new="" />
+		<implementation id="." released="2016-07-24" version="0.1">
+			<manifest-digest sha256="" sha256new=""/>
 
 			<!-- executed by 0launch by default -->
-			<command name='run' path='freecad_convert.py'>
-				<runner interface='http://repo.roscidus.com/python/python'>
-					<version not-before='3'/>
+			<command name="run" path="freecad_convert.py">
+				<runner interface="http://repo.roscidus.com/python/python">
+					<version not-before="3"/>
 				</runner>
 				<arg>$INPUT_FILE</arg>
 				<arg>${OUTPUT_FILE}</arg>
 			</command>
 
 			<!-- executed by 0test by default -->
-			<command name='test' path='freecad_convert.py'>
-				<runner interface='http://repo.roscidus.com/python/python'>
-					<version not-before='3'/>
+			<command name="test" path="freecad_convert.py">
+				<runner interface="http://repo.roscidus.com/python/python">
+					<version not-before="3"/>
 				</runner>
 				<arg>test.stp</arg>
 				<arg>test.stl</arg>
@@ -79,9 +80,9 @@ Newer versions will use the <command>.
 			</command>
 
 			<!-- executed by 0compile by default -->
-			<command name='compile' path='freecad_convert.py'>
-				<runner interface='http://repo.roscidus.com/python/python'>
-					<version not-before='3'/>
+			<command name="compile" path="freecad_convert.py">
+				<runner interface="http://repo.roscidus.com/python/python">
+					<version not-before="3"/>
 				</runner>
 			</command>
 
@@ -94,4 +95,3 @@ Newer versions will use the <command>.
 
 
 </interface>
-
