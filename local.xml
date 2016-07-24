@@ -34,14 +34,14 @@
 	 a feed might point to an optional extra feed, e.g. a development feed for a local version using 0install add-feed
 	<feed-for interface='~/freecad_convert/'/>
 	-->
-	<feed-for interface='http://raw.githubusercontent.com/faerietree/freecad_convert/master/freecad_convert.xml'/>
+	<feed-for interface='http://raw.githubusercontent.com/faerietree/freecad_convert/master/public/freecad_convert.xml'/>
 
 	<!-- Note: The main attribute here is to support 0launch < 0.53.
 Newer versions will use the <command>.
 	-->
 	<group version='0.1' main="freecad_convert.py" doc-dir="doc" license="CC-BY-SA">
 		<!-- for this group common dependencies: -->
-		<requires interface="http://raw.githubusercontent.com/faerietree/FreeCAD/FreeCAD.xml">
+		<requires interface="http://raw.githubusercontent.com/faerietree/FreeCAD/public/FreeCAD.xml">
 			<!--
 			<version not-before="">
 			</version>
