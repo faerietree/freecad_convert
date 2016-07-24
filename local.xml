@@ -52,7 +52,7 @@ Newer versions will use the <command>.
 			<version not-before="3"/>
 		</requires>
 
-		<implementation id="." released="2016-07-24" version="0.2">
+		<implementation id="." version="0.2-post">
 			<manifest-digest sha256="" sha256new=""/>
 
 			<!-- executed by 0launch by default -->
