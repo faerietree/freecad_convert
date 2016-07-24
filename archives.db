@@ -1,0 +1,4 @@
+# Records the absolute URL of all known archives.
+# To relocate archives, edit this file to contain the new addresses and run '0repo'.
+# Each line is 'basename SHA1 URL'
+freecad-convert-0.1.tar.bz2 ce28ce2d35fc254ac3475978d8b6548d728d1ad1 https://sourceforge.net/projects/freecad-convert/files/0.1/freecad-convert-0.1.tar.bz2
