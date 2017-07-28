@@ -49,7 +49,7 @@ Newer versions will use the <command>.
 			-->
 		</requires>
 		<requires interface="http://repo.roscidus.com/python/python">
-			<version not-before="3"/>
+			<version before="3"/>
 		</requires>
 
 		<implementation id="." version="0.2-post">
